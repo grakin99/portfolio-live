@@ -501,4 +501,11 @@ main .btn:hover svg rect {
   border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
 }
 
+@media (prefers-reduced-motion) {
+  /* styles to apply if the user's settings are set to reduced motion */
+  header a:hover {
+    all: revert;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
