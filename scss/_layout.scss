@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  // background-image: url("https://picsum.photos/2560/1600");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: $container-padding;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
