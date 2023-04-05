@@ -191,6 +191,12 @@ main a {
   font-size: 2rem;
   margin-top: 2rem;
 }
+header a:focus,
+header a :focus-visible,
+main a:focus,
+main a :focus-visible {
+  text-decoration: underline;
+}
 header svg,
 main svg {
   position: absolute;
@@ -225,7 +231,11 @@ main .btn span {
   -webkit-text-fill-color: transparent;
 }
 header .btn:hover svg rect,
-main .btn:hover svg rect {
+header .btn:focus svg rect,
+header .btn:focus-visible svg rect,
+main .btn:hover svg rect,
+main .btn:focus svg rect,
+main .btn:focus-visible svg rect {
   stroke-width: 4;
   stroke-dasharray: 206, 537;
   stroke-dashoffset: 435;
