@@ -1,3 +1,5 @@
+@use "global";
+
 header {
-  padding: $container-padding;
+  padding: global.$container-padding;
 }

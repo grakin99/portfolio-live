@@ -1,3 +1,5 @@
+@use "global";
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@ body {
 }
 
 main {
-  padding: $container-padding;
+  padding: global.$container-padding;
   width: 100%;
 }
 

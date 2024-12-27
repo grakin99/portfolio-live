@@ -1,3 +1,5 @@
+@use "global";
+
 $color-black: #161616;
 $color-white: #fff;
 $size: 170px; // (Fully responsive)
@@ -6,7 +8,7 @@ $size: 170px; // (Fully responsive)
 .cat {
   position: relative;
   height: $size;
-  width: $size * 1.13;
+  width: $size
 }
 
 // Ears
@@ -36,9 +38,9 @@ $size: 170px; // (Fully responsive)
 
 .ear--left {
   left: -7%;
-  border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
+  border-radius: 70% 30% 0 0% / 100% 100% 0% 0%;
   transform: rotate(-15deg);
-  @include cat-ears;
+  @include global.cat-ears;
   &::before,
   &::after {
     right: 10%;
@@ -51,9 +53,9 @@ $size: 170px; // (Fully responsive)
 
 .ear--right {
   right: -7%;
-  border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
+  border-radius: 30% 70% 0 0% / 100% 100% 0% 0%;
   transform: rotate(15deg);
-  @include cat-ears;
+  @include global.cat-ears;
 
   &::before,
   &::after {

@@ -1,3 +1,5 @@
+@use "global";
+
 html {
   font-size: 62.5%;
 }
@@ -12,7 +14,7 @@ p {
 }
 
 h1 {
-  font-size: $h1-size;
+  font-size: global.$h1-size;
 }
 
 h2 {

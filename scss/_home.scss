@@ -1,3 +1,5 @@
+@use "global";
+
 header,
 main {
   display: flex;
@@ -71,7 +73,7 @@ main {
 .technology {
   display: flex;
   flex-wrap: wrap;
-  padding: $container-padding;
+  padding: global.$container-padding;
   border: 0.1rem solid black;
   h2,
   h3 {
