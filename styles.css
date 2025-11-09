@@ -16,7 +16,7 @@
     font-display: swap;
 }
 
-:root{
+:root {
     --transition-speed: 0.25s
 }
 
@@ -36,6 +36,10 @@ body {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-bottom: 4rem;
+    @supports (display: grid) {
+        display: grid;
+        justify-content: center;
+    }
 }
 
 h1 {
@@ -100,7 +104,11 @@ a:focus-visible {
 
 main, header, footer {
     max-width: 70ch;
-    margin: 0 auto;
+    margin: 0;
+    @supports not (display: grid) {
+        margin-left: auto;
+        margin-right:  auto;
+    }
 }
 
 header {
